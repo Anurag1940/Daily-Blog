@@ -8,53 +8,42 @@
   <title>Daily Blog | Latest Articles on Fitness, Education, Technology & Lifestyle</title>
   <meta name="description"
     content="Daily Blog brings you the latest articles on fitness, education, technology, travel, and food. Get expert tips, tutorials, and insights in multiple languages including English, Hindi, and Punjabi." />
-  <meta name="keywords"
-    content="daily blog, fitness, education, technology, travel, food, hindi blog, punjabi blog, english blog, health, study tips, web development, recipes" />
   <meta name="author" content="Daily Blog" />
   <meta name="robots" content="index, follow" />
+
+  <!-- Google Tag (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DD6PY1KD7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-3DD6PY1KD7');
+  </script>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Daily Blog | Multilingual Articles on Fitness, Education & Technology" />
   <meta property="og:description"
-    content="Explore articles on fitness, education, technology, travel, and food in English, Hindi, and Punjabi. Your daily dose of knowledge and inspiration." />
-  <meta property="og:image" content="/social-preview.jpg" />
-  <meta property="og:url" content="https://dailyblog.com" />
-  <meta property="og:site_name" content="Daily Blog" />
-  <meta property="og:locale" content="en_US" />
+    content="Explore articles on fitness, education, technology, travel, and food in English, Hindi, and Punjabi." />
+  <meta property="og:image" content="https://daily-blogs.com/social-preview.jpg" />
+  <meta property="og:url" content="https://daily-blogs.com" />
 
-  <!-- Twitter -->
+  <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Daily Blog | Multilingual Articles on Fitness, Education & Technology" />
   <meta name="twitter:description"
     content="Explore articles on fitness, education, technology, travel, and food in English, Hindi, and Punjabi." />
-  <meta name="twitter:image" content="/social-preview.jpg" />
-  <meta name="twitter:site" content="@dailyblog" />
-  <meta name="twitter:creator" content="@dailyblog" />
+  <meta name="twitter:image" content="https://daily-blogs.com/social-preview.jpg" />
 
-  <!-- Additional Meta Tags -->
-  <meta name="theme-color" content="#000000" />
-  <meta name="msapplication-TileColor" content="#000000" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <meta name="apple-mobile-web-app-title" content="Daily Blog" />
-
-  <!-- Favicon & Icons -->
-  <link rel="icon" type="image/svg+xml" href="/logo-white.svg" />
-  <link rel="alternate icon" type="image/png" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-  <!-- Manifest -->
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="/logo-white.svg" />
   <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://dailyblog.com/" />
+  <link rel="canonical" href="https://daily-blogs.com/" />
 
-  <!-- Preload Critical Resources -->
+  <!-- Preload critical JS -->
   <link rel="preload" href="data:text/jsx;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC5qc3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykpLnJlbmRlcigKICA8U3RyaWN0TW9kZT4KICAgIDxBcHAgLz4KICA8L1N0cmljdE1vZGU+LAopCg==" as="script" />
-
-  <!-- DNS Prefetch -->
-  <link rel="dns-prefetch" href="https://images.unsplash.com">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -63,10 +52,10 @@
     "@type": "WebSite",
     "name": "Daily Blog",
     "description": "Multilingual blog featuring articles on fitness, education, technology, travel, and food",
-    "url": "https://dailyblog.com",
+    "url": "https://daily-blogs.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://dailyblog.com/search?q={search_term_string}",
+      "target": "https://daily-blogs.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
@@ -79,12 +68,10 @@
   <div id="root"></div>
   <script src="/public/ScrollSmooth.js"></script>
 
-  <!-- Noscript for non-JS users -->
   <noscript>
     <div style="text-align: center; padding: 2rem; font-family: Arial, sans-serif;">
       <h1>Daily Blog</h1>
       <p>Please enable JavaScript to view this website.</p>
-      <p>We bring you the latest articles on fitness, education, technology, travel, and food in multiple languages.</p>
     </div>
   </noscript>
 </body>
