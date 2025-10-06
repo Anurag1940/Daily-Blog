@@ -10,9 +10,13 @@
     content="Daily Blog brings you the latest articles on fitness, education, technology, travel, and food. Get expert tips, tutorials, and insights in multiple languages including English, Hindi, and Punjabi." />
   <meta name="author" content="Daily Blog" />
   <meta name="robots" content="index, follow" />
-  <meta name="google-adsense-account" content="ca-pub-5226840605752154">
 
-  <!-- Google Tag (GA4) -->
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-5226840605752154" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5226840605752154"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DD6PY1KD7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -46,29 +50,35 @@
   <!-- Preload critical JS -->
   <link rel="preload" href="data:text/jsx;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC5qc3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykpLnJlbmRlcigKICA8U3RyaWN0TW9kZT4KICAgIDxBcHAgLz4KICA8L1N0cmljdE1vZGU+LAopCg==" as="script" />
 
-  <!-- Structured Data -->
+  <!-- Structured Data for SEO -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Daily Blog",
-    "description": "Multilingual blog featuring articles on fitness, education, technology, travel, and food",
-    "url": "https://daily-blogs.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://daily-blogs.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Daily Blog",
+      "description": "Multilingual blog featuring articles on fitness, education, technology, travel, and food",
+      "url": "https://daily-blogs.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://daily-blogs.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
-  }
   </script>
   <script type="module" crossorigin src="/assets/index-Bms6Aaz7.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BRu9rVLz.css">
 </head>
 
 <body>
+  <!-- React Root -->
   <div id="root"></div>
-  <script src="/public/ScrollSmooth.js"></script>
 
+  <!-- React Main Script -->
+
+  <!-- Optional Additional Scripts -->
+  <script src="/public/ScrollSmooth.js" defer></script>
+
+  <!-- Noscript Fallback -->
   <noscript>
     <div style="text-align: center; padding: 2rem; font-family: Arial, sans-serif;">
       <h1>Daily Blog</h1>
