@@ -11,11 +11,6 @@
   <meta name="author" content="Daily Blog" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Google AdSense -->
-  <meta name="google-adsense-account" content="ca-pub-5226840605752154" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5226840605752154"
-    crossorigin="anonymous"></script>
-
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DD6PY1KD7"></script>
   <script>
@@ -25,7 +20,7 @@
     gtag('config', 'G-3DD6PY1KD7');
   </script>
 
-  <!-- Open Graph / Facebook -->
+  <!-- Social / Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Daily Blog | Multilingual Articles on Fitness, Education & Technology" />
   <meta property="og:description"
@@ -33,7 +28,6 @@
   <meta property="og:image" content="https://daily-blogs.com/social-preview.jpg" />
   <meta property="og:url" content="https://daily-blogs.com" />
 
-  <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Daily Blog | Multilingual Articles on Fitness, Education & Technology" />
   <meta name="twitter:description"
@@ -41,16 +35,47 @@
   <meta name="twitter:image" content="https://daily-blogs.com/social-preview.jpg" />
 
   <!-- Favicon & Manifest -->
-  <link rel="icon" href="/logo-white.svg" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/assets/logo-white.MPEfPS5T.svg" />
 
-  <!-- Canonical URL -->
+  <!-- Canonical -->
   <link rel="canonical" href="https://daily-blogs.com/" />
 
-  <!-- Preload critical JS -->
-  <link rel="preload" href="data:text/jsx;base64,aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0ICcuL2luZGV4LmNzcycKaW1wb3J0IEFwcCBmcm9tICcuL0FwcC5qc3gnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykpLnJlbmRlcigKICA8U3RyaWN0TW9kZT4KICAgIDxBcHAgLz4KICA8L1N0cmljdE1vZGU+LAopCg==" as="script" />
+  <!-- Minimal critical CSS -->
+  <style>
+    :root {
+      --body-font: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial
+    }
 
-  <!-- Structured Data for SEO -->
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: var(--body-font);
+      -webkit-font-smoothing: antialiased
+    }
+
+    #pre-content {
+      padding: 1.25rem;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    #pre-content ul {
+      padding-left: 1rem;
+    }
+
+    #pre-content li {
+      margin-bottom: 1rem;
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      * {
+        animation: none !important
+      }
+    }
+  </style>
+
+  <!-- Structured data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,24 +90,77 @@
       }
     }
   </script>
-  <script type="module" crossorigin src="/assets/index-Bms6Aaz7.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BRu9rVLz.css">
+
+  <script type="module" crossorigin src="/assets/index.CHcigK86.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor.D7G1P_es.js">
+  <link rel="stylesheet" crossorigin href="/assets/vendor.GNLSjkBZ.css">
+  <link rel="stylesheet" crossorigin href="/assets/index.CnL8KTQ9.css">
 </head>
 
 <body>
-  <!-- React Root -->
+  <!-- Pre-rendered fallback content (visible to crawlers & bots) -->
+  <div id="pre-content" aria-hidden="false">
+    <h1>Daily Blog</h1>
+    <p>Daily Blog publishes daily articles on Fitness, Education, Technology, Travel, and Food. Browse the latest
+      editor-picked stories and practical how-tos in English, Hindi, and Punjabi.</p>
+
+    <h2>Latest Articles</h2>
+    <ul>
+      <li>
+        <a href="/blog/post-1" aria-label="How to stay fit while working from home">
+          How to stay fit while working from home
+        </a>
+        <p>Tips and routines to maintain fitness even with a desk job and minimal equipment.</p>
+      </li>
+      <li>
+        <a href="/blog/post-2" aria-label="Top 5 productivity apps for students">
+          Top 5 productivity apps for students
+        </a>
+        <p>Discover apps that help students manage their time and improve learning efficiency.</p>
+      </li>
+      <li>
+        <a href="/blog/post-3" aria-label="Latest tech gadgets review 2025">
+          Latest tech gadgets review 2025
+        </a>
+        <p>Stay updated on the newest gadgets and technology trends for 2025.</p>
+      </li>
+      <li>
+        <a href="/blog/post-4" aria-label="Healthy recipes for busy people">
+          Healthy recipes for busy people
+        </a>
+        <p>Quick and nutritious meal ideas for people on the go.</p>
+      </li>
+    </ul>
+
+    <p><a href="/blog" aria-label="View all blog posts">View all blog posts</a></p>
+  </div>
+
+  <!-- React root (Vite + React will mount/hydrate here) -->
   <div id="root"></div>
 
-  <!-- React Main Script -->
+  <!-- Hide pre-content once client JS executes -->
+  <script>
+    (function () {
+      try {
+        var el = document.getElementById('pre-content');
+        if (el) { el.setAttribute('aria-hidden', 'true'); el.style.display = 'none'; }
+      } catch (e) { /* graceful degrade */ }
+    })();
+  </script>
 
-  <!-- Optional Additional Scripts -->
-  <script src="/public/ScrollSmooth.js" defer></script>
+  <!-- Main app bundle -->
 
-  <!-- Noscript Fallback -->
+  <!-- Non-critical client script -->
+
+  <!-- Google AdSense: after meaningful content -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5226840605752154"
+    crossorigin="anonymous"></script>
+
+  <!-- Noscript fallback -->
   <noscript>
-    <div style="text-align: center; padding: 2rem; font-family: Arial, sans-serif;">
+    <div style="text-align:center;padding:2rem;font-family:Arial, sans-serif;">
       <h1>Daily Blog</h1>
-      <p>Please enable JavaScript to view this website.</p>
+      <p>Please enable JavaScript to view the fully interactive website.</p>
     </div>
   </noscript>
 </body>
