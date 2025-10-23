@@ -33,7 +33,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Sample Blog Articles from JSON -->
+  <!-- Sample Blog Articles -->
   <url>
     <loc>https://dailybloghq.netlify.app/blog/fitness-journey-beginners-punjabi</loc>
     <lastmod>2024-03-10</lastmod>
